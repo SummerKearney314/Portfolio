@@ -325,13 +325,13 @@ p a {
     }
     #experience h5 {
         font-size: 11px;
-        padding: 3% 0;
+        padding: 3% 1%;
         clear: both;
         background-color: #eddaca;
         float: left;
         margin: 0;
         display: block;
-        width: 100%;
+        width: 90%;
      }
 
      #experience ul {
