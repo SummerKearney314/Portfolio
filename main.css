@@ -217,7 +217,27 @@ p a {
     }
  }
 
-@media screen and (max-width:825px) {
+ @media screen and (max-width:825px) {
+    .leftAside {
+        clear:both;
+        width:94%;
+        padding-top: 0;
+    }
+    .leftAside img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
+    .rightSection {
+        display:block;
+        width:94%;
+        border-left:none;
+    }
+ }
+
+@media screen and (max-width:819px) {
     .spacing {
         padding-top:104px;
     }
