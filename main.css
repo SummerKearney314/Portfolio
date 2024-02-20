@@ -11,7 +11,7 @@ body{
 .content {
     padding-top: 2%;
     clear:both;
-    border-top:2px solid black;
+    border-top:1px solid black;
 }
 
 #wrap {
@@ -21,28 +21,16 @@ body{
 
 /*styling for the title and background image*/
 .title {
-    clear: both;
-    padding: 3% 0 35%;
-}
- .title img {
-    position:absolute;
-    width:96%;
-    z-index:-1;
-}  
-.title h1 {
+    background-image: url('img/backing.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: black; 
+    text-align: center; 
+    padding: 10%;
+    margin: 2% 0;
     font-weight: bold;
-    margin: 0;
-    padding: 5% 0;
-    width:96%;
-    position:absolute;
-    z-index: 0;
-    text-align: center;
 }
-#myName{
-    font-size: 50px;
-    font-weight: bolder;
-    padding: 12% 0;
-}
+
 
 /*Home page cover*/
 #homeCover header {
@@ -50,7 +38,7 @@ body{
     color: black;
     margin: 0;
     background-color: #f1e6de; 
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
 #name {
     font-size: 50px;
@@ -61,16 +49,9 @@ body{
      padding:7%;
      float:left;
      clear:both;
- }
+ } */
 
 
-
- /*spacing under the title*/
- .spacing
- {
-     width: 100%;
-     padding-top: 132px;
- }
 
 /*nav styling*/
 nav {
@@ -79,13 +60,16 @@ nav {
     width:96%; 
     background-color: #fbfbf7;  
     padding-top:1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 nav ul {
     list-style:none;
     padding: 2%;
     margin: 0;
     text-align: center;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
 nav li {
     display:inline;
@@ -111,7 +95,11 @@ a { /*link styling*/
     text-decoration: none; 
     font-size:20px;
     font-weight: lighter;
- }
+}
+.menu-toggle {
+    display: none; /* Hide the menu toggle button by default */
+    cursor: pointer;
+}
 
 
  /*text*/
@@ -142,14 +130,14 @@ li {
     padding: 4%;
     width:63%;
     float:left;
-    border-right: 2px solid black;
+    border-right: 1px solid black;
 }
  /*right sided section*/
  .rightSection {
     padding: 4%;
     width:63%;
     float:right;
-    border-left: 2px solid black;
+    border-left: 1px solid black;
 }
 
  /*aside right image bar*/
@@ -262,7 +250,7 @@ li {
         padding: 4%;
         width: 70%;
         float: left;
-        border-right: 2px solid black;
+        border-right: 1px solid black;
     }
 
  }
@@ -301,32 +289,30 @@ li {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:531px) {
     /*styling for the title and background image*/
     .spacing {
         padding-top:175px;
     }
     
     .title h1 {
-        font-size: 17px;
+        font-size: 20px;
     }
-    #myName {
-        font-size: 23px;
-    }
-
    
      /*left sided section*/
     .leftSection {
         padding: 4%;
         width:94%;
         float:left;
-        border-right: 2px solid black;
+        border-right: 1px solid black;
     }
     /*right sided section*/
     .rightSection {
-        padding: 4%;
-        width:94%;
+        padding: 2%;
+        margin: 0;
+        width:96%;
         float:right;
+
     }
 
     .rightImgBar {
@@ -340,18 +326,16 @@ li {
         min-width: 117px;
     }
 
-
     /*nav styling*/
     nav ul {
         list-style:none;
-        padding: 2%;
-        margin: 0;
+        padding: 0;
         text-align: center;
-        border-bottom: 2px solid black;
+        border-bottom: 0.5px solid black;
     }
     nav li {
         display:block;
-        border-bottom:2px solid black;
+        border-bottom:0.5px solid black;
         padding: 1% 5% 1% 0;
     }
     nav li:last-child {
@@ -361,15 +345,38 @@ li {
         min-width: 44px;
         max-width: 75px;
     }
-    nav a {
-        font-size:16px;
-    }
-
-
     h1, nav h1 {
         font-size: 25px;
+    } 
+    .logo-name-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1%;
+        border-bottom: 1px solid black;
     }
 
+    .logo-name-container h1 {
+        font-size: 1.2em;
+    }
+
+    /* Styles for the menu toggle button */
+    .menu-toggle {
+        display: block; 
+        padding: 10px; 
+        margin-left: auto; 
+    }
+
+    /* Hide the navigation links by default */
+    nav ul {
+        display: none;
+    }
+    nav ul.show {
+        display: block;
+    }
+
+    .content {
+        border-top: 1px solid black;
+    }
 
     #experience h3 {
         font-size:18px;
@@ -398,6 +405,4 @@ li {
      #experience ul {
        font-size:14px;
     }
-
 }
-
