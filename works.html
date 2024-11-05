@@ -1,73 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Works</title>
-        <link href="main.css" rel="stylesheet" type="text/css">
-        <!--set viewport-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="img/logo.png">
-        <style>
-        </style>
-    </head>
-    <body>
+  <head>
+    <title>Works</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <!--set viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <style></style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <nav>
+          <div class="logo-name-container">
+            <img src="img/logo.png" alt="logo picture" />
+            <h1>Summer Kearney</h1>
+            <div class="menu-toggle">&#9776;</div>
+          </div>
 
-        <div id="wrap">
-            <header>
-                <nav>
-                    <div class="logo-name-container">
-                        <img src="img/logo.png" alt="logo picture"/>
-                        <h1>Summer Kearney</h1>
-                        <div class="menu-toggle">&#9776;</div>
-                    </div>
-                    
-                    <ul class="nav-links"> 
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="works.html">Works</a></li>
-                        <li><a href="experience.html">Experience</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-        <div class="title">
-            <h1>Works</h1> 
-        </div>
+      <div class="title">
+        <h1>Works</h1>
+      </div>
 
-            <div class="content">
+      <div class="content">
+        <h2>Photo Gallery</h2>
+        <p>
+          <img
+            src="img/gallery_ss.png"
+            alt="Screenshot of the photo gallery application built with React and Firebase."
+          />
+          <br /><br />
+          This project is a dynamic photo gallery web application that allows
+          users to view and interact with a collection of images. Users can see
+          the number of views and favorites for each image, providing a rich and
+          engaging experience. The frontend is built using React, a popular
+          JavaScript library for building user interfaces. The backend leverages
+          Firebase services, including Firebase Realtime Database and Firebase
+          Storage. The Realtime Database is used to store and manage data about
+          the images, such as view counts and favorites, while Firebase Storage
+          is used to store the actual image files. <br /><br />
+          <a href="https://gallery.summerkearney.com/" target="_blank">
+            Gallery App</a
+          >
+        </p>
 
-                <h2>Snake</h2>
-                <p>
-                    <img src="img/snake_ss.png" alt="Screenshot of original Snake using Java in Eclpise."/>
-                    <br><br>
-                    This was my first real programming project! 
-                    This project was done in grade 11, originally using Java Swing component in Eclipse. 
-                    It was my first expirience creating a GUI. It helped develop my understanding of arrays, especially 3D arrays.
-                    This project was my first introduction to using event listeners to listen for keyboard input, allowing the snake to move when the arrow keys are pressed.  
-                    Of course, I have freshened it up a little since but I've still 
-                    kept the main parts of the program, and a button that brings the theme back to the original one created in 2019. 
-                    <br>
-                    <a href = "https://snake.summerkearney.com/"  target="_blank"> Feel free to check out my program - Mobile is not incorporated (yet).</a>
-                </p>
-                    
-                <h2>Chips Store</h2>
-                <p>
-                    <img src="img/chip_app.png" alt="Screenshot of a demo of the chip store application programmed in ASP.NET and Vue.js"/>
-                    <br><br>
-                    This project is a simulation of what an online chip store could look like, allowing the user to add chips to their cart and "buy" them.
-                    It was built using Vue, a JavaScript framework, to build the user interface. 
-                    The backend utilized ASP.Net Core technology to establish a REST API that uses HTTP protocols and requests to POST, PUT, GET, and DELETE data.
-                    The website and the database are hosted via Azure. this project showed me a more in-depth view of the backend of a program. 
-                    I learned about cross-origin resource sharing (CORS), the distinctions between authorization and authentication, and gained insight into how protect a password by generating a hash and salt.
-                     Learning about the process of how data is transferred in the DAL was very interesting to me! 
-                     I learned about the controller's role in handling requests from a URL, often collaborating with the DAL/DAO to execute CRUD operations. 
-                     The controller orchestrates this process, returning results and sending appropriate response codes. 
-                    <br>
-                    Please feel free to use my test email, "test@gmail.com", and password, "1", to login and view the different tabs of <a href="https://skearney2023.azurewebsites.net/#/" target="_blank">the website</a>!
-                </p>
+        <h2>Chips Store</h2>
+        <p>
+          <img
+            src="img/chip_app.png"
+            alt="Screenshot of a demo of the chip store application programmed in ASP.NET and Vue.js"
+          />
+          <br /><br />
+          This project is a simulation of what an online chip store could look
+          like, allowing the user to add chips to their cart and "buy" them. It
+          was built using Vue, a JavaScript framework, to build the user
+          interface. The backend utilized ASP.Net Core technology to establish a
+          REST API that uses HTTP protocols and requests to POST, PUT, GET, and
+          DELETE data. The website and the database are hosted via Azure. this
+          project showed me a more in-depth view of the backend of a program. I
+          learned about cross-origin resource sharing (CORS), the distinctions
+          between authorization and authentication, and gained insight into how
+          protect a password by generating a hash and salt. Learning about the
+          process of how data is transferred in the DAL was very interesting to
+          me! I learned about the controller's role in handling requests from a
+          URL, often collaborating with the DAL/DAO to execute CRUD operations.
+          The controller orchestrates this process, returning results and
+          sending appropriate response codes.
+          <br />
+          Please feel free to use my test email, "test@gmail.com", and password,
+          "1", to login and view the different tabs of
+          <a href="https://skearney2023.azurewebsites.net/#/" target="_blank"
+            >the website</a
+          >!
+        </p>
 
-                <h3>More To Be Added Soon...</h3>
-        </div>
-        </div>
-        <script src="script.js"></script>
-    </body> 
+        <h2>Snake</h2>
+        <p>
+          <img
+            src="img/snake_ss.png"
+            alt="Screenshot of original Snake using Java in Eclpise."
+          />
+          <br /><br />
+          This was my first real programming project! This project was done in
+          grade 11, originally using Java Swing component in Eclipse. It was my
+          first expirience creating a GUI. It helped develop my understanding of
+          arrays, especially 3D arrays. This project was my first introduction
+          to using event listeners to listen for keyboard input, allowing the
+          snake to move when the arrow keys are pressed. Of course, I have
+          freshened it up a little since but I've still kept the main parts of
+          the program, and a button that brings the theme back to the original
+          one created in 2019.
+          <br />
+          <a href="https://snake.summerkearney.com/" target="_blank">
+            Feel free to check out my program - Mobile is not incorporated
+            (yet).</a
+          >
+        </p>
+
+        <h3>More To Be Added Soon...</h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
