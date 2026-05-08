@@ -45,24 +45,6 @@ body {
   font-weight: bold;
 }
 
-#homeCover header {
-  padding: 30% 10% 20%;
-  color: var(--text-primary);
-  margin: 0;
-  background-color: #f1e6de;
-  border-bottom: 1px solid black;
-}
-#name {
-  font-size: 50px;
-  font-weight: bolder;
-}
-#homeCover img {
-  width: 20%;
-  padding: 7%;
-  float: left;
-  clear: both;
-}
-
 /*nav styling*/
 nav {
   width: 100%;
@@ -97,20 +79,19 @@ nav h1 {
   font-size: 2em;
 }
 a {
-  /*link styling*/
   color: var(--text-primary);
   text-decoration: none;
   font-size: 20px;
   font-weight: lighter;
 }
 .menu-toggle {
-  display: none; /* Hide the menu toggle button by default */
+  display: none;
   cursor: pointer;
 }
 
 /*text*/
 p {
-  font-size: 110%; /*100%;*/
+  font-size: 110%;
   text-align: center;
   background-color: var(--bg-accent);
   padding: 2%;
@@ -120,7 +101,7 @@ p img {
   width: 35%;
 }
 p a {
-  font-size: 110%; /*100%;*/
+  font-size: 110%;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: underline;
 }
@@ -129,34 +110,11 @@ li {
   font-size: 110%;
 }
 
-/*left sided section*/
-.leftSection {
-  padding: 4%;
-  width: 63%;
-  float: left;
-  border-right: 1px solid black;
-}
 /*right sided section*/
 .rightSection {
   padding: 4%;
   flex: 3;
   border-left: 1px solid black;
-}
-
-/*aside right image bar*/
-.rightImgBar {
-  float: right;
-  padding: 6% 3%;
-  width: 22%;
-}
-.rightImgBar img,
-iframe {
-  width: 90%;
-  padding: 8%;
-  background-color: var(--bg-accent);
-  margin-top: 85px;
-  max-width: 200px;
-  min-width: 167px;
 }
 
 /*aside left image bar*/
@@ -186,9 +144,6 @@ iframe {
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
-}
-#experience h3 {
-  padding-bottom: 0;
 }
 #experience h4 {
   font-style: italic;
@@ -244,29 +199,6 @@ iframe {
     width: 94%;
     border-left: none;
   }
-
-  .rightImgBar {
-    float: right;
-    padding: 6% 1%;
-    width: 19%;
-  }
-
-  .rightImgBar img,
-  iframe {
-    width: 90%;
-    padding: 8%;
-    background-color: var(--bg-accent);
-    margin-top: 125px;
-    max-width: 157px;
-    min-width: 82px;
-  }
-
-  .leftSection {
-    padding: 4%;
-    width: 70%;
-    float: left;
-    border-right: 1px solid black;
-  }
 }
 
 @media screen and (max-width: 819px) {
@@ -275,11 +207,6 @@ iframe {
   }
   .spacing {
     padding-top: 104px;
-  }
-
-  .leftSection {
-    width: 92%;
-    border-right: none;
   }
 
   .rightSection {
@@ -302,14 +229,9 @@ iframe {
     width: 40%;
     margin-top: 0;
   }
-
-  .rightImgBar {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 531px) {
-  /*styling for the title and background image*/
   .spacing {
     padding-top: 175px;
   }
@@ -318,23 +240,11 @@ iframe {
     font-size: 20px;
   }
 
-  /*left sided section*/
-  .leftSection {
-    padding: 4%;
-    width: 94%;
-    float: left;
-    border-right: 1px solid black;
-  }
-  /*right sided section*/
   .rightSection {
     padding: 2%;
     margin: 0;
     width: 96%;
     float: right;
-  }
-
-  .rightImgBar {
-    display: none;
   }
 
   p,
@@ -364,7 +274,6 @@ iframe {
     min-width: 44px;
     max-width: 75px;
   }
-  h1,
   nav h1 {
     font-size: 25px;
   }
@@ -392,10 +301,6 @@ iframe {
   }
   nav ul.show {
     display: block;
-  }
-
-  .content {
-    border-top: 1px solid black;
   }
 
   #experience h3 {
