@@ -45,14 +45,13 @@ body {
   font-weight: bold;
 }
 
-/*
 #homeCover header {
   padding: 30% 10% 20%;
   color: var(--text-primary);
   margin: 0;
   background-color: #f1e6de;
   border-bottom: 1px solid black;
-}*/
+}
 #name {
   font-size: 50px;
   font-weight: bolder;
@@ -66,14 +65,10 @@ body {
 
 /*nav styling*/
 nav {
-  z-index: 1;
-  position: fixed;
-  width: 96%;
-  background-color: var(--bg-primary);
-  padding-top: 1%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  width: 100%;
+  left: 0;
+  padding: 1% 2%;
+  box-sizing: border-box;
 }
 nav ul {
   list-style: none;
