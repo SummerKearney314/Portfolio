@@ -1,3 +1,9 @@
+:root {
+  --bg-primary: #fbfbf7;
+  --bg-accent: #eddaca;
+  --text-primary: #000000;
+}
+
 header,
 nav,
 section,
@@ -7,7 +13,7 @@ footer {
 }
 
 body {
-  background-color: #fbfbf7;
+  background-color: var(--bg-primary);
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0 2%;
 }
@@ -32,21 +38,21 @@ body {
   background-image: url("img/backing.jpg");
   background-size: cover;
   background-position: center;
-  color: black;
+  color: var(--text-primary);
   text-align: center;
   padding: 10%;
   margin: 2% 0;
   font-weight: bold;
 }
 
-/*Home page cover*/
+/*
 #homeCover header {
   padding: 30% 10% 20%;
-  color: black;
+  color: var(--text-primary);
   margin: 0;
   background-color: #f1e6de;
   border-bottom: 1px solid black;
-}
+}*/
 #name {
   font-size: 50px;
   font-weight: bolder;
@@ -57,16 +63,13 @@ body {
   float: left;
   clear: both;
 }
-*/
-
-
 
 /*nav styling*/
 nav {
   z-index: 1;
   position: fixed;
   width: 96%;
-  background-color: #fbfbf7;
+  background-color: var(--bg-primary);
   padding-top: 1%;
   display: flex;
   align-items: center;
@@ -91,8 +94,8 @@ nav img {
   float: left;
 }
 nav h1 {
-  background-color: #fbfbf7;
-  color: black;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   font-weight: bold;
   margin: 0;
   padding: 1% 2%;
@@ -100,7 +103,7 @@ nav h1 {
 }
 a {
   /*link styling*/
-  color: black;
+  color: var(--text-primary);
   text-decoration: none;
   font-size: 20px;
   font-weight: lighter;
@@ -114,7 +117,7 @@ a {
 p {
   font-size: 110%; /*100%;*/
   text-align: center;
-  background-color: #eddaca;
+  background-color: var(--bg-accent);
   padding: 2%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -155,8 +158,7 @@ li {
 iframe {
   width: 90%;
   padding: 8%;
-  background-color: #eddaca;
-  margin-top: 40%;
+  background-color: var(--bg-accent);
   margin-top: 85px;
   max-width: 200px;
   min-width: 167px;
@@ -173,16 +175,16 @@ iframe {
 .leftAside img {
   width: 100%;
   padding: 7%;
-  background-color: #eddaca;
+  background-color: var(--bg-accent);
 }
 
 /*experience page styling*/
 #experience h3,
-h4 {
-  color: black;
+#experience h4 {
+  color: var(--text-primary);
   padding: 2% 1%;
   margin: 0;
-  background-color: #eddaca;
+  background-color: var(--bg-accent);
 }
 #experience h2 {
   margin-top: 5%;
@@ -258,8 +260,7 @@ h4 {
   iframe {
     width: 90%;
     padding: 8%;
-    background-color: #eddaca;
-    margin-top: 40%;
+    background-color: var(--bg-accent);
     margin-top: 125px;
     max-width: 157px;
     min-width: 82px;
@@ -419,7 +420,7 @@ h4 {
     font-size: 11px;
     padding: 3% 1%;
     clear: both;
-    background-color: #eddaca;
+    background-color: var(--bg-accent);
     float: left;
     margin: 0;
     display: block;
